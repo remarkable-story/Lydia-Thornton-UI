@@ -1,0 +1,48 @@
+
+.whole-wrapper {
+    min-width: 200px;
+    margin: 0 auto;
+    border: 1px solid grey;
+
+    section {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    @media @tablet {
+        border: 1px solid red;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    @media @desktop {
+        border: 1px solid blue;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .top-wrapper {
+        .custom-flex(center, center, column);
+        width: 80%;
+        margin: 0 auto;
+        h1 {
+            text-align: center;
+        }
+
+        @media @tablet {
+            .custom-flex(center, center, column);
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        @media @desktop {
+            .custom-flex(space-between, center, row);
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+    }
+    .mission {
+
+    }
+}
