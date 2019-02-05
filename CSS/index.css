@@ -1,55 +1,184 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*my code starts here*/
+
 .whole-wrapper {
   min-width: 200px;
   margin: 0 auto;
   border: 1px solid grey;
 }
-.whole-wrapper section {
-  width: 80%;
+.whole-wrapper .navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
   margin: 0 auto;
+  background-color: #eee;
+}
+@media (min-width: 500px) {
+  .whole-wrapper .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (min-width: 800px) {
+  .whole-wrapper .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 40px;
+  }
+}
+.whole-wrapper .navigation a {
+  padding: 20px;
+}
+@media (min-width: 500px) {
+  .whole-wrapper .navigation a {
+    padding-left: 30px;
+  }
+}
+.whole-wrapper section {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid red;
 }
 @media (min-width: 500px) {
   .whole-wrapper {
     border: 1px solid red;
-    width: 80%;
     margin: 0 auto;
   }
 }
 @media (min-width: 800px) {
   .whole-wrapper {
     border: 1px solid blue;
-    width: 80%;
     margin: 0 auto;
   }
 }
-.whole-wrapper .top-wrapper {
+.whole-wrapper .mission {
+  text-align: center;
+  padding: 20px;
+}
+.whole-wrapper .donate {
+  text-align: center;
+  padding: 20px;
+  background-image: url("https://lh3.googleusercontent.com/wyz4wenqdx_OYDjlgGNJfrmHPLfaRWaREZ1KvsHjNCip3b1WT4AXVAGkD0PC4VoZiYWCpXzKuPqG8vXwDoDcDngM5_VrhTbYarcFbaiiWUT0ToGiCMKYJsLF2657nCWExVwkauCTJA=w2400");
+  background-size: 600px;
+}
+.whole-wrapper .donate button {
+  width: 200px;
+  height: 40px;
+  border-radius: 30px;
+  margin: 60px;
+}
+.whole-wrapper .extra {
+  background-color: orange;
+  height: 100px;
+}
+.whole-wrapper .map {
+  height: 100px;
+}
+.whole-wrapper .stories .topics {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  width: 80%;
-  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.whole-wrapper .top-wrapper h1 {
+.whole-wrapper .stories .topics .tab {
+  height: 40px;
+  width: 120px;
+  border: 1px solid gray;
   text-align: center;
+  border-radius: 30px;
+  padding: 10px;
+}
+.whole-wrapper .card-contain {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
 }
 @media (min-width: 500px) {
-  .whole-wrapper .top-wrapper {
+  .whole-wrapper .card-contain {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
+    flex-direction: row;
+    width: 100%;
   }
 }
 @media (min-width: 800px) {
-  .whole-wrapper .top-wrapper {
+  .whole-wrapper .card-contain {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+  }
+}
+.whole-wrapper .card-contain .card {
+  border: 1px solid red;
+  width: 100%;
+  height: 200px;
+  margin: 5px 0;
+}
+@media (min-width: 500px) {
+  .whole-wrapper .card-contain .card {
+    width: 40%;
   }
 }
 * {
@@ -57,6 +186,6 @@
 }
 html,
 body {
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  margin: 0 auto;
 }
