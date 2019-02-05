@@ -8,8 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Serif%7CWork+Sans:700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
     <script src="./index.js" async></script>
-
-
+    <!-- JS file to enable the JavaScript API. You can point at the
+  version on public.tableau.com, online.tableau.com, or your on-prem Server
+    <script src="https://www.example.com/javascripts/api/tableau-2.js"></script>
+...
+ Empty div where the viz will be placed 
+    <div id="tableauViz"></div>
+-->
 </head>
 
 <body>
@@ -38,8 +43,9 @@
         </section>
 
         <div class='extra'></div>
-
+ 
         <section class='map'>
+
             <div>
                 <div class='tableauPlaceholder' id='viz1549401526339' style='position: relative'><noscript>
                 <a href='#'>
@@ -57,78 +63,118 @@
             </object>
         </div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1549401526339');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></div>
         </section>
-        
+
         <div class='extra'></div>
 
         <section class='stories tabs'>
             <h2>Featured Stories</h2>
             <h4>Filter</h4>
             <div class="topics">
-                <div data-tab="hello" class="tab active-tab">hello</div>
-                <div data-tab="goodbyee" class="tab">goodbye</div>
-                <div data-tab="wonderful" class="tab">wonderful</div>
-                <div data-tab="sick" class="tab">sick</div>
-                <div data-tab="sleepy" class="tab">sleepy</div>
+                <div data-tab="All" class="tab active-tab">All</div>
+                <div data-tab="SAmerica" class="tab">South America</div>
+                <div data-tab="EAsia" class="tab">East Asia</div>
+                <div data-tab="NAmerica" class="tab">North America</div>
+                <div data-tab="Asia" class="tab">Asia</div>
+                <div data-tab="Africa" class="tab">Africa</div>
+                
             </div>
         </section>
 
 
             
         <section class="card-contain">
-            <div class="card" data-tab="hello">
-                <div class="headline">Hello this is card</div>
-                <div class="author">
-                <img src="" alt="">
-                <div class="small">
-            
-                </div>
-                </div>
+            <div class="card" data-tab="SAmerica">
+                <div class="headline">Belize</div>
+                <div class="btm-color"></div>
             </div>
-            <div class="card" data-tab="goodbye">
-                <div class="headline">Goodbye this is card</div>
-                <div class="author">
-                <img src="" alt="">
-                <div class="small">
-            
-                </div>
-                </div>
+
+            <div class="card" data-tab="SAmerica">
+                <div class="headline">Bolivia</div>
+                <div class="btm-color"></div>
             </div>
             
-            <div class="card" data-tab="wonderful">
-                <div class="headline">Wonderful this is card</div>
-                <div class="author">
-                <img src="" alt="">
-                <div class="small">
-            
-                </div>
-                </div>
+            <div class="card" data-tab="SAmerica">
+                <div class="headline">Brazil</div>
+                <div class="btm-color"></div>
             </div>
-            <div class="card" data-tab="sick">
-                <div class="headline">Sick this is card</div>
-                <div class="author">
-                <img src="" alt="">
-                <div class="small">
-            
-                </div>
-                </div>
+
+            <div class="card" data-tab="Asia">
+                <div class="headline">Cambodia</div>
+                <div class="btm-color"></div>
             </div>
-            <div class="card" data-tab="sleepy">
-                <div class="headline">Sleepy this is card</div>
-                <div class="author">
-                <img src="" alt="">
-                <div class="small">
-            
-                </div>
-                </div>
+
+            <div class="card" data-tab="SAmerica">
+                <div class="headline">Columbia</div>
+                <div class="btm-color"></div>
             </div>
-            <div class="card" data-tab="sleepy">
-                <div class="headline">Hello this is sleepy</div>
-                <div class="author">
-                <img src="" alt="">
-                <div class="small">
+
+            <div class="card" data-tab="SAmerica">
+                <div class="headline">Ecuador</div>
+                <div class="btm-color"></div>
+            </div>
+
+            <div class="card" data-tab="NAmerica">
+                <div class="headline">El Salvador</div>
+                <div class="btm-color"></div>
+            </div>
+
+            <div class="card" data-tab="Africa">
+                <div class="headline">Ghana</div>
+                <div class="btm-color"></div>
+            </div>
             
-                </div>
-                </div>
+            <div class="card" data-tab="NAmerica">
+                <div class="headline">Guatemala</div>
+                <div class="btm-color"></div>
+            </div>
+
+            <div class="card" data-tab="NAmerica">
+                <div class="headline">Haiti</div>
+                <div class="btm-color"></div>
+            </div>
+
+            <div class="card" data-tab="NAmerica">
+                <div class="headline">Honduras</div>
+                <div class="btm-color"></div>
+            </div>
+
+            <div class="card" data-tab="Africa">
+                <div class="headline">Madagascar</div>
+                <div class="btm-color"></div>
+            </div>
+
+            <div class="card" data-tab="EAsia">
+                <div class="headline">Mongolia</div>
+                <div class="btm-color"></div>
+            </div>
+            <div class="card" data-tab="NAmerica">
+                <div class="headline">Nicaragua</div>
+                <div class="btm-color"></div>
+            </div>
+            
+            <div class="card" data-tab="SAmerica">
+                <div class="headline">Paraguay</div>
+                <div class="btm-color"></div>
+            </div>
+
+            <div class="card" data-tab="SAmerica">
+                <div class="headline">Peru</div>
+                <div class="btm-color"></div>
+            </div>
+
+            <div class="card" data-tab="Asia">
+                <div class="headline">Phillipines</div>
+                <div class="btm-color"></div>
+            </div>
+
+            <div class="card" data-tab="Africa">
+                <div class="headline">Sierra Leone</div>
+                <div class="btm-color"></div>
+            </div>
+
+            <div class="card" data-tab="Africa">
+                <div class="headline">Zimbabwe</div>
+                <div class="btm-color"></div>   
             </div>
         </section>
 

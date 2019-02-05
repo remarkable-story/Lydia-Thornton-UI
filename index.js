@@ -2,7 +2,7 @@ class tabLink {
     constructor(element) {
       this.element = element;
       this.tabData = this.element.dataset.tab;
-      if (this.tabData === 'hello') {
+      if (this.tabData === 'All') {
         this.cards = document.querySelectorAll('.card');
       } else {
         this.cards = document.querySelectorAll(`.card[data-tab='${this.tabData}']`)
@@ -33,3 +33,23 @@ class tabLink {
   
   let tabs = document.querySelectorAll('.tab');
   tabs.forEach(tab => new tabLink(tab));
+
+
+/*
+
+  function initializeViz() {
+    // JS object that points at empty div in the html
+    var placeholderDiv = document.getElementById("tableauViz");
+    // URL of the viz to be embedded
+    var url = "https://public.tableau.com/shared/D8M3XWXBG?:display_count=yes";
+    // An object that contains options specifying how to embed the viz
+    var options = {
+      width: '600px',
+      height: '600px',
+      hideTabs: true,
+      hideToolbar: true,
+    };
+    viz = new tableau.Viz(placeholderDiv, url, options);
+  }
+  
+  */

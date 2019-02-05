@@ -1,7 +1,9 @@
 
 
 
-
+* {
+    box-sizing: border-box;
+  }
 
 
 
@@ -36,6 +38,7 @@
         }
         a {
             text-decoration: none;
+            font-family: 'Work Sans', sans-serif;
             text-align: center;
             color: white;
             width: 97%;
@@ -46,10 +49,19 @@
             margin: 2px;
             font-size: 3em;
             color: rgb(247, 22, 135);
-            padding: 3px;
+            padding: 5px;
+            &:hover {
+                background-color: rgb(48, 62, 248);
+                border: 3px solid white;
+                color: white;
+            }
             
             @media @tablet {
-                padding: 10px;
+                padding: 5px;
+                margin: 5px;
+            }
+            @media @desktop {
+                padding: 5px;
                 margin: 5px;
             }
             
@@ -58,7 +70,6 @@
     section {
         width: 100%;
         margin: 0 auto;
-        border: 1px solid red;
     }
 
     @media @tablet {
@@ -81,7 +92,7 @@
         text-align: center;
         padding: 20px;
         background-image: url("https://lh3.googleusercontent.com/wyz4wenqdx_OYDjlgGNJfrmHPLfaRWaREZ1KvsHjNCip3b1WT4AXVAGkD0PC4VoZiYWCpXzKuPqG8vXwDoDcDngM5_VrhTbYarcFbaiiWUT0ToGiCMKYJsLF2657nCWExVwkauCTJA=w2400");
-        background-size: 600px;
+        background-size: 700px;
         background-repeat: no-repeat;
         background-color: orange;
         background-position: center; 
@@ -92,6 +103,9 @@
             height: 40px;
             border-radius: 30px;
             margin: 60px;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 3em;
+            border: 2px solid orange;
         }
     }
     .extra {
@@ -101,18 +115,32 @@
 
 
     .stories {
+        font-family: 'Work Sans', sans-serif;
+        h2 {
+            text-align: center;
+        }
         .topics {
-            .custom-flex(center, center, row);
+            .custom-flex(space-around, center, row);
             flex-wrap: wrap;
+            margin-bottom: 30px;
+            .active-tab {
+                background-color: rgb(247, 22, 135);
+            }
         
             .tab {
+            font-family: 'Work Sans', sans-serif;
             height: 40px; 
             width: 120px;
             border: 1px solid gray;
             text-align: center;
-            border-radius: 30px;
+            border-radius: 10px;
             padding: 10px;
+            background-color: #eee;
+            &:hover {
+                background-color: orange;
             }
+            }
+
         }
         
     }
@@ -121,20 +149,30 @@
         .custom-flex(space-around, center, column);
         flex-wrap: wrap;
         width: 100%;
+        background-color: #eee;
         @media @tablet {
-            .custom-flex(space-around, center, row);
+            .custom-flex(space-evenly, center, row);
             width: 100%;
         }
         @media @desktop {
-            .custom-flex(space-around, center, row);
+            .custom-flex(space-evenly, center, row);
             width: 100%;
         }
         .card {
-            border: 1px solid red;
+            border: 2px solid orange;
             width: 100%;
             height: 200px;
-            margin: 5px 0;
+            margin: 10px 0;
             border-radius: 20px;
+            background-color: white; 
+            .btm-color {
+                width: 100%;
+                height: 50px;
+                background-color: orange;
+                margin-top: 140px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
            @media @tablet {
                width: 40%;
 
