@@ -45,10 +45,10 @@
             height: 40px;
             background-color: #eee;
             border-radius: 20px;
-            border: 3px solid rgb(247, 22, 135);
+            border: 3px solid @secondary;
             margin: 2px;
             font-size: 3em;
-            color: rgb(247, 22, 135);
+            color: @secondary;
             padding: 5px;
             &:hover {
                 background-color: rgb(48, 62, 248);
@@ -84,7 +84,7 @@
     
     .mission {
         text-align: center;
-        padding: 20px;
+        padding: 40px;
        
     }
 
@@ -94,7 +94,7 @@
         background-image: url("https://lh3.googleusercontent.com/wyz4wenqdx_OYDjlgGNJfrmHPLfaRWaREZ1KvsHjNCip3b1WT4AXVAGkD0PC4VoZiYWCpXzKuPqG8vXwDoDcDngM5_VrhTbYarcFbaiiWUT0ToGiCMKYJsLF2657nCWExVwkauCTJA=w2400");
         background-size: 700px;
         background-repeat: no-repeat;
-        background-color: orange;
+        background-color: @main;
         background-position: center; 
         
         
@@ -105,14 +105,56 @@
             margin: 60px;
             font-family: 'Work Sans', sans-serif;
             font-size: 3em;
-            border: 2px solid orange;
+            border: 2px solid @main;
+            &:hover {
+                background-color: rgb(48, 62, 248);
+                border: 3px solid white;
+                color: white;
+            }
         }
     }
     .extra {
-        background-color: orange;
+        background-color: @main;
         height: 60px;
     }
+    .extra2 {
+        background-color: @secondary;
+        height: 10px;
+    }
 
+    .share {
+        text-align: center;
+        padding: 20px;
+        background-image: url("https://lh3.googleusercontent.com/vW3EPZKB80W0dToGp-V7C3OhL5Nf3fR6Vx0WHL8hOJLTJsB7wbk8sdA4Y19tGQKfd3TRFgXB7Mvxl1x8VeoeH32jR8_-8y9P-liO0MEGPPZwgAWAqdcgax8sLKaeMhRn54Prz1gCQw=w2400");
+        background-size: 1000px;
+        background-repeat: no-repeat;
+        background-color: black;
+        background-position: center; 
+        border: 20px solid black;
+        color: white;
+        font-size: 2em;
+        h4 {
+            font-size: 2em;
+        }
+
+        
+        button {
+            @media @tablet {
+                width: 200px;
+                height: 40px;
+                border-radius: 30px;
+                margin: 60px;
+                font-family: 'Work Sans', sans-serif;
+                
+                border: 2px solid @main;
+                &:hover {
+                    background-color: rgb(48, 62, 248);
+                    border: 3px solid white;
+                    color: white;
+                }
+            }
+        }
+    }
 
     .stories {
         font-family: 'Work Sans', sans-serif;
@@ -129,9 +171,7 @@
                 flex-wrap: wrap;
                 margin-bottom: 30px;
             }
-            .active-tab {
-                background-color: rgb(247, 22, 135);
-            }
+            
         
             .tab {
             font-family: 'Work Sans', sans-serif;
@@ -144,11 +184,14 @@
             padding: 10px;
             background-color: #eee;
             &:hover {
-                background-color: orange;
+                background-color: @main;
             }
             @media @tablet {
                 width: 120px
             }
+            }
+            .active-tab {
+                background-color: @secondary;
             }
 
         }
@@ -172,21 +215,17 @@
             width: 100%;
         }
         .card {
-            border: 2px solid orange;
+            border: 2px solid @main;
             width: 100%;
             height: 200px;
             margin: 10px 0;
             border-radius: 20px;
-            background-color: white; 
-            .btm-color {
-                width: 100%;
-                height: 50px;
-                background-color: orange;
-                margin-top: 125px;
-                border-bottom-left-radius: 20px;
-                border-bottom-right-radius: 20px;
-                border: 2px solid orange;
+            background-color: white;
+            .custom-flex(center, center, column) 
+            .headline {
+                text-align: center;
             }
+            
            @media @tablet {
                width: 40%;
 
