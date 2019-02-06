@@ -120,17 +120,24 @@
             text-align: center;
         }
         .topics {
-            .custom-flex(space-around, center, row);
-            flex-wrap: wrap;
+            .custom-flex(center, center, column);
             margin-bottom: 30px;
+            width: 100%;
+            
+            @media @tablet {
+                .custom-flex(space-around, center, row);
+                flex-wrap: wrap;
+                margin-bottom: 30px;
+            }
             .active-tab {
                 background-color: rgb(247, 22, 135);
             }
         
             .tab {
             font-family: 'Work Sans', sans-serif;
+            font-size: 2em;
             height: 40px; 
-            width: 120px;
+            width: 100%;
             border: 1px solid gray;
             text-align: center;
             border-radius: 10px;
@@ -138,6 +145,9 @@
             background-color: #eee;
             &:hover {
                 background-color: orange;
+            }
+            @media @tablet {
+                width: 120px
             }
             }
 
@@ -150,6 +160,9 @@
         flex-wrap: wrap;
         width: 100%;
         background-color: #eee;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 3em;
+        text-align: center;
         @media @tablet {
             .custom-flex(space-evenly, center, row);
             width: 100%;
@@ -169,9 +182,10 @@
                 width: 100%;
                 height: 50px;
                 background-color: orange;
-                margin-top: 140px;
+                margin-top: 125px;
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
+                border: 2px solid orange;
             }
            @media @tablet {
                width: 40%;
