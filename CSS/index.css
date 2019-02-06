@@ -54,15 +54,15 @@
   height: 40px;
   background-color: #eee;
   border-radius: 20px;
-  border: 3px solid #C12E6A;
+  border: 1px solid #C12E6A;
   margin: 2px;
   font-size: 3em;
   color: #C12E6A;
-  padding: 5px;
+  padding: 10px;
 }
 .whole-wrapper .navigation a:hover {
   background-color: #303ef8;
-  border: 3px solid white;
+  border: 1px solid white;
   color: white;
 }
 @media (min-width: 500px) {
@@ -101,10 +101,11 @@
   text-align: center;
   padding: 20px;
   background-image: url("https://lh3.googleusercontent.com/wyz4wenqdx_OYDjlgGNJfrmHPLfaRWaREZ1KvsHjNCip3b1WT4AXVAGkD0PC4VoZiYWCpXzKuPqG8vXwDoDcDngM5_VrhTbYarcFbaiiWUT0ToGiCMKYJsLF2657nCWExVwkauCTJA=w2400");
-  background-size: 700px;
+  background-size: 1000px;
   background-repeat: no-repeat;
-  background-color: #FBA423;
+  background-color: black;
   background-position: center;
+  border: 10px solid black;
 }
 .whole-wrapper .donate button {
   width: 200px;
@@ -136,14 +137,29 @@
   background-repeat: no-repeat;
   background-color: black;
   background-position: center;
-  border: 20px solid black;
+  border: 10px solid black;
   color: white;
   font-size: 2em;
 }
 .whole-wrapper .share h4 {
   font-size: 2em;
+  color: white;
 }
-@media (min-width: 500px) {
+.whole-wrapper .share button {
+  width: 30%;
+  height: 40px;
+  border-radius: 30px;
+  margin: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.6em;
+  border: 2px solid #FBA423;
+}
+.whole-wrapper .share button:hover {
+  background-color: #303ef8;
+  border: 3px solid white;
+  color: white;
+}
+@media (min-width: 800px) {
   .whole-wrapper .share button {
     width: 200px;
     height: 40px;
@@ -185,13 +201,15 @@
 .whole-wrapper .stories .topics .tab {
   font-family: 'Work Sans', sans-serif;
   font-size: 2em;
-  height: 40px;
   width: 100%;
-  border: 1px solid gray;
   text-align: center;
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 20px;
   background-color: #eee;
+  border: 1px solid black;
+  margin: 2px;
+  font-size: 3em;
+  color: black;
+  padding: 5px;
 }
 .whole-wrapper .stories .topics .tab:hover {
   background-color: #FBA423;
@@ -237,18 +255,49 @@
 .whole-wrapper .card-contain .card {
   border: 2px solid #FBA423;
   width: 100%;
-  height: 200px;
   margin: 10px 0;
-  border-radius: 20px;
+  border-radius: 15px;
   background-color: white;
-}
-.whole-wrapper .card-contain .card .custom-flex(center, center, column) .headline {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: space-evenly;
+  flex-direction: column;
 }
 @media (min-width: 500px) {
   .whole-wrapper .card-contain .card {
-    width: 40%;
+    width: 35%;
+    margin: 15px;
   }
+}
+@media (min-width: 800px) {
+  .whole-wrapper .card-contain .card {
+    width: 35%;
+    margin: 15px;
+  }
+}
+.whole-wrapper .card-contain .card .headline {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.whole-wrapper .card-contain .card .other-card-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.whole-wrapper .card-contain .card .other-card-content p {
+  margin: 0 10px;
+}
+.whole-wrapper .card-contain .card .other-card-content .img-container {
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.whole-wrapper .card-contain .card .other-card-content .img-container img {
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 10px;
 }
 * {
   box-sizing: border-box;

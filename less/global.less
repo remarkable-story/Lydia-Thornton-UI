@@ -45,14 +45,14 @@
             height: 40px;
             background-color: #eee;
             border-radius: 20px;
-            border: 3px solid @secondary;
+            border: 1px solid @secondary;
             margin: 2px;
             font-size: 3em;
             color: @secondary;
-            padding: 5px;
+            padding: 10px;
             &:hover {
                 background-color: rgb(48, 62, 248);
-                border: 3px solid white;
+                border: 1px solid white;
                 color: white;
             }
             
@@ -92,10 +92,11 @@
         text-align: center;
         padding: 20px;
         background-image: url("https://lh3.googleusercontent.com/wyz4wenqdx_OYDjlgGNJfrmHPLfaRWaREZ1KvsHjNCip3b1WT4AXVAGkD0PC4VoZiYWCpXzKuPqG8vXwDoDcDngM5_VrhTbYarcFbaiiWUT0ToGiCMKYJsLF2657nCWExVwkauCTJA=w2400");
-        background-size: 700px;
+        background-size: 1000px;
         background-repeat: no-repeat;
-        background-color: @main;
+        background-color: black;
         background-position: center; 
+        border: 10px solid black;
         
         
         button {
@@ -105,6 +106,7 @@
             margin: 60px;
             font-family: 'Work Sans', sans-serif;
             font-size: 3em;
+           
             border: 2px solid @main;
             &:hover {
                 background-color: rgb(48, 62, 248);
@@ -130,16 +132,30 @@
         background-repeat: no-repeat;
         background-color: black;
         background-position: center; 
-        border: 20px solid black;
+        border: 10px solid black;
         color: white;
         font-size: 2em;
         h4 {
             font-size: 2em;
+            color: white;
+            
         }
 
         
         button {
-            @media @tablet {
+            width: 30%;
+            height: 40px;
+            border-radius: 30px;
+            margin: 20px;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1.6em;
+            border: 2px solid @main;
+            &:hover {
+                background-color: rgb(48, 62, 248);
+                border: 3px solid white;
+                color: white;
+            }
+            @media @desktop {
                 width: 200px;
                 height: 40px;
                 border-radius: 30px;
@@ -176,13 +192,17 @@
             .tab {
             font-family: 'Work Sans', sans-serif;
             font-size: 2em;
-            height: 40px; 
+            //height: 40px; 
             width: 100%;
-            border: 1px solid gray;
             text-align: center;
-            border-radius: 10px;
-            padding: 10px;
+            border-radius: 20px;
+            padding: 5px;
             background-color: #eee;
+            border: 1px solid black;
+            margin: 2px;
+            font-size: 3em;
+            color: black;
+            padding: 5px;
             &:hover {
                 background-color: @main;
             }
@@ -217,19 +237,52 @@
         .card {
             border: 2px solid @main;
             width: 100%;
-            height: 200px;
             margin: 10px 0;
-            border-radius: 20px;
+            border-radius: 15px;
             background-color: white;
-            .custom-flex(center, center, column) 
+            
+            .custom-flex(center, space-evenly, column); 
+
+            @media @tablet {
+                width: 35%;
+                margin: 15px;
+ 
+            }
+            @media @desktop {
+                width: 35%;
+                margin: 15px;
+                
+            }
+
             .headline {
                 text-align: center;
+                margin-bottom: 15px;
+                margin-top: 20px;
+                
             }
-            
-           @media @tablet {
-               width: 40%;
+            .other-card-content {
+                .custom-flex(space-around, center, column);
+                
+                p {
+                    margin: 0 10px;
+                }
 
-           }
+                .img-container {
+                    text-align: center;
+                    width: 100%;
+                    margin-top: 10px;
+                    
+                    img {
+                        
+                        object-fit: cover;
+                        width: 100%;
+                        margin-bottom: 10px;
+                       
+                    }
+                    
+                }
+            }
+           
         }
     }
 }

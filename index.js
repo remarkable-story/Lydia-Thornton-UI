@@ -28,7 +28,7 @@ class tabLink {
     }
     selectCard() {
       this.cardElement.style.display = "flex"
-      this.cardElement.style.flexDirection = "column"
+      
     }
   }
   
