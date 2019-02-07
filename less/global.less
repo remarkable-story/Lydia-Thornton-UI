@@ -12,81 +12,73 @@
     margin: 0 auto;
     border: 1px solid grey;
     .navigation {
-        .custom-flex(flex-end, space-around, column);
+        .custom-flex(flex-start, center, column);
         width: 100%;
         margin: 0 auto;
         height: 500px;
         background-image: url("https://lh3.googleusercontent.com/7VbailvtUIrwZuPsRBB9NPYV1iDQRz0cVl7_4xfntUyUKMCypr9WK0GkT1hKoFn0c1x2JRESXjFOM8sm0bQCBE5ekaBx6TVLAl12tC-BSaK8gKHSIh8wMEuEbTyLZJllnbMOibXXfQ=w2400");
         padding-bottom: 10px;
+        
         @media @tablet {
-            .custom-flex(center, center, column);
+            .custom-flex(flex-start, center, column);
         }
 
         
         h1 {
             text-align: center;
             padding-bottom: 100px;
+            padding-top: 100px;
         }
-        nav {
-            .custom-flex(space-around, center, column);
-            width: 100%;
-            
-            @media @tablet {
-                .custom-flex(space-around, center, row);
-                width: 80%;
-            }
-        }
-        a {
-            text-decoration: none;
-            cursor: pointer;
-            font-family: 'Work Sans', sans-serif;
-            text-align: center;
-            color: white;
-            width: 97%;
-            height: 40px;
-            background-color: #eee;
-            border-radius: 20px;
-            border: 1px solid @secondary;
-            margin: 2px;
-            font-size: 3em;
-            color: @secondary;
-            padding: 10px;
-            &:hover {
-                background-color: rgb(48, 62, 248);
-                border: 1px solid white;
-                color: white;
-            }
-            
-            @media @tablet {
-                padding: 5px;
-                margin: 5px;
-            }
-            @media @desktop {
-                padding: 5px;
-                margin: 5px;
-            }
-            
         }
     }
+    
+    
+  
+    .accordion {
+        display: inline-block;
+        background-color: #eee;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 3em;
+        color: black;
+        cursor: pointer;
+        padding: 5px;
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        border: 1px solid @secondary;
+        transition: 0.4s;
+         &:hover {
+            background-color: @secondary;
+          }
+        .active {
+            background-color: @main;
+          }
+        }
+
+    .panel {
+        display: none;
+
+    
+
     section {
         width: 100%;
         margin: 0 auto;
     }
 
     @media @tablet {
-        border: 1px solid red;
+        
         margin: 0 auto;
     }
 
     @media @desktop {
-        border: 1px solid blue;
+        
         margin: 0 auto;
     }
-    
     .mission {
         text-align: center;
         padding: 40px;
-       
+        display: block;
+    
     }
 
     .donate {
@@ -110,7 +102,7 @@
             font-family: 'Work Sans', sans-serif;
             font-size: 3em;
             cursor: pointer;
-           
+        
             border: 2px solid @main;
             &:hover {
                 background-color: rgb(48, 62, 248);
@@ -171,6 +163,10 @@
         }
     }
 
+    .map {
+        height: 400px;
+    }
+
     .stories {
         font-family: 'Work Sans', sans-serif;
         h2 {
@@ -192,7 +188,7 @@
             font-family: 'Work Sans', sans-serif;
             cursor: pointer;
             font-size: 2em;
-            height: 40px; 
+            height: 30px; 
             width: 100%;
             text-align: center;
             border-radius: 20px;
@@ -267,7 +263,7 @@
             @media @tablet {
                 width: 35%;
                 margin: 15px;
- 
+
             }
             @media @desktop {
                 width: 25%;
@@ -298,8 +294,8 @@
                         object-fit: cover;
                         width: 100%;
                         margin-bottom: 10px;
-                       
                     }
+                }
                     
                 }
             }
@@ -307,5 +303,4 @@
         }
        
     }
-}
-    
+
