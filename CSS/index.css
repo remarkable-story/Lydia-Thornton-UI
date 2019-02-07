@@ -47,6 +47,7 @@
 }
 .whole-wrapper .navigation a {
   text-decoration: none;
+  cursor: pointer;
   font-family: 'Work Sans', sans-serif;
   text-align: center;
   color: white;
@@ -100,20 +101,21 @@
 .whole-wrapper .donate {
   text-align: center;
   padding: 20px;
+  height: 300px;
   background-image: url("https://lh3.googleusercontent.com/wyz4wenqdx_OYDjlgGNJfrmHPLfaRWaREZ1KvsHjNCip3b1WT4AXVAGkD0PC4VoZiYWCpXzKuPqG8vXwDoDcDngM5_VrhTbYarcFbaiiWUT0ToGiCMKYJsLF2657nCWExVwkauCTJA=w2400");
-  background-size: 1000px;
+  background-size: 1600px;
   background-repeat: no-repeat;
-  background-color: black;
-  background-position: center;
-  border: 10px solid black;
+  background-position-y: -350px;
+  background-position-x: center;
 }
 .whole-wrapper .donate button {
   width: 200px;
   height: 40px;
   border-radius: 30px;
-  margin: 60px;
+  margin-top: 120px;
   font-family: 'Work Sans', sans-serif;
   font-size: 3em;
+  cursor: pointer;
   border: 2px solid #FBA423;
 }
 .whole-wrapper .donate button:hover {
@@ -133,15 +135,15 @@
   text-align: center;
   padding: 20px;
   background-image: url("https://lh3.googleusercontent.com/vW3EPZKB80W0dToGp-V7C3OhL5Nf3fR6Vx0WHL8hOJLTJsB7wbk8sdA4Y19tGQKfd3TRFgXB7Mvxl1x8VeoeH32jR8_-8y9P-liO0MEGPPZwgAWAqdcgax8sLKaeMhRn54Prz1gCQw=w2400");
-  background-size: 1000px;
+  background-size: 1800px;
   background-repeat: no-repeat;
-  background-color: black;
+  background-color: white;
   background-position: center;
-  border: 10px solid black;
   color: white;
   font-size: 2em;
 }
 .whole-wrapper .share button {
+  cursor: pointer;
   width: 30%;
   height: 40px;
   border-radius: 30px;
@@ -222,12 +224,16 @@
     background-size: 150px;
     background-position: center;
     background-repeat: no-repeat;
-    color: #C12E6A;
+    color: #FBA423;
+    transition: 1s;
+    -webkit-box-shadow: 2px 2px 5px 0px #000000;
+    -moz-box-shadow: 2px 2px 5px 0px #000000;
+    box-shadow: 2px 2px 5px 0px #000000;
   }
-  .whole-wrapper .stories .topics .tab:hover {
-    padding-top: 20px;
-    color: white;
-  }
+}
+.whole-wrapper .stories .topics .tab:hover {
+  padding-top: 20px;
+  color: white;
 }
 .whole-wrapper .stories .topics .active-tab {
   background-color: #C12E6A;
@@ -268,6 +274,7 @@
   margin: 10px 0;
   border-radius: 15px;
   background-color: white;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: space-evenly;
@@ -281,7 +288,7 @@
 }
 @media (min-width: 800px) {
   .whole-wrapper .card-contain .card {
-    width: 35%;
+    width: 25%;
     margin: 15px;
   }
 }
