@@ -8,8 +8,8 @@
 }
 .whole-wrapper .navigation {
   display: flex;
-  justify-content: flex-end;
-  align-items: space-around;
+  justify-content: flex-start;
+  align-items: center;
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
@@ -20,7 +20,7 @@
 @media (min-width: 500px) {
   .whole-wrapper .navigation {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
   }
@@ -28,6 +28,7 @@
 .whole-wrapper .navigation h1 {
   text-align: center;
   padding-bottom: 100px;
+  padding-top: 100px;
 }
 .accordion {
   display: inline-block;
@@ -41,7 +42,6 @@
   height: 30px;
   text-align: center;
   border: 1px solid #C12E6A;
-  border-radius: 20px;
   transition: 0.4s;
 }
 .accordion:hover {
@@ -59,13 +59,11 @@
 }
 @media (min-width: 500px) {
   .panel {
-    border: 1px solid red;
     margin: 0 auto;
   }
 }
 @media (min-width: 800px) {
   .panel {
-    border: 1px solid blue;
     margin: 0 auto;
   }
 }
@@ -149,6 +147,9 @@
     color: white;
   }
 }
+.panel .map {
+  height: 400px;
+}
 .panel .stories {
   font-family: 'Work Sans', sans-serif;
 }
@@ -177,7 +178,7 @@
   font-family: 'Work Sans', sans-serif;
   cursor: pointer;
   font-size: 2em;
-  height: 40px;
+  height: 30px;
   width: 100%;
   text-align: center;
   border-radius: 20px;

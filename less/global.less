@@ -12,20 +12,22 @@
     margin: 0 auto;
     border: 1px solid grey;
     .navigation {
-        .custom-flex(flex-end, space-around, column);
+        .custom-flex(flex-start, center, column);
         width: 100%;
         margin: 0 auto;
         height: 500px;
         background-image: url("https://lh3.googleusercontent.com/7VbailvtUIrwZuPsRBB9NPYV1iDQRz0cVl7_4xfntUyUKMCypr9WK0GkT1hKoFn0c1x2JRESXjFOM8sm0bQCBE5ekaBx6TVLAl12tC-BSaK8gKHSIh8wMEuEbTyLZJllnbMOibXXfQ=w2400");
         padding-bottom: 10px;
+        
         @media @tablet {
-            .custom-flex(center, center, column);
+            .custom-flex(flex-start, center, column);
         }
 
         
         h1 {
             text-align: center;
             padding-bottom: 100px;
+            padding-top: 100px;
         }
         }
     }
@@ -44,7 +46,6 @@
         height: 30px;
         text-align: center;
         border: 1px solid @secondary;
-        border-radius: 20px;
         transition: 0.4s;
          &:hover {
             background-color: @secondary;
@@ -65,12 +66,12 @@
     }
 
     @media @tablet {
-        border: 1px solid red;
+        
         margin: 0 auto;
     }
 
     @media @desktop {
-        border: 1px solid blue;
+        
         margin: 0 auto;
     }
     .mission {
@@ -162,6 +163,10 @@
         }
     }
 
+    .map {
+        height: 400px;
+    }
+
     .stories {
         font-family: 'Work Sans', sans-serif;
         h2 {
@@ -183,7 +188,7 @@
             font-family: 'Work Sans', sans-serif;
             cursor: pointer;
             font-size: 2em;
-            height: 40px; 
+            height: 30px; 
             width: 100%;
             text-align: center;
             border-radius: 20px;
