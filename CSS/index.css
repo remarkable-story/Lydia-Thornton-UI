@@ -105,6 +105,7 @@
   background-image: url("https://lh3.googleusercontent.com/wyz4wenqdx_OYDjlgGNJfrmHPLfaRWaREZ1KvsHjNCip3b1WT4AXVAGkD0PC4VoZiYWCpXzKuPqG8vXwDoDcDngM5_VrhTbYarcFbaiiWUT0ToGiCMKYJsLF2657nCWExVwkauCTJA=w2400");
   background-size: 1600px;
   background-repeat: no-repeat;
+  background-color: #FBA423;
   background-position-y: -350px;
   background-position-x: center;
 }
@@ -231,9 +232,11 @@
     box-shadow: 2px 2px 5px 0px #000000;
   }
 }
-.whole-wrapper .stories .topics .tab:hover {
-  padding-top: 20px;
-  color: white;
+@media (min-width: 500px) {
+  .whole-wrapper .stories .topics .tab:hover {
+    padding-top: 20px;
+    color: white;
+  }
 }
 .whole-wrapper .stories .topics .active-tab {
   background-color: #C12E6A;

@@ -96,7 +96,7 @@
         background-image: url("https://lh3.googleusercontent.com/wyz4wenqdx_OYDjlgGNJfrmHPLfaRWaREZ1KvsHjNCip3b1WT4AXVAGkD0PC4VoZiYWCpXzKuPqG8vXwDoDcDngM5_VrhTbYarcFbaiiWUT0ToGiCMKYJsLF2657nCWExVwkauCTJA=w2400");
         background-size: 1600px;
         background-repeat: no-repeat;
-        //background-color: black;
+        background-color: @main;
         background-position-y: -350px; 
         background-position-x: center;
         //border: 10px solid black;
@@ -223,9 +223,10 @@
 }
 
                 &:hover {
+                    @media @tablet {
                     padding-top: 20px;
                     color: white;
-                    
+                    }
                 }
                 
             }
