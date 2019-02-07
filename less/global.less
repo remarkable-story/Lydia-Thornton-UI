@@ -1,0 +1,311 @@
+
+
+
+* {
+    box-sizing: border-box;
+  }
+
+
+
+.whole-wrapper {
+    min-width: 200px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    .navigation {
+        .custom-flex(flex-end, space-around, column);
+        width: 100%;
+        margin: 0 auto;
+        height: 500px;
+        background-image: url("https://lh3.googleusercontent.com/7VbailvtUIrwZuPsRBB9NPYV1iDQRz0cVl7_4xfntUyUKMCypr9WK0GkT1hKoFn0c1x2JRESXjFOM8sm0bQCBE5ekaBx6TVLAl12tC-BSaK8gKHSIh8wMEuEbTyLZJllnbMOibXXfQ=w2400");
+        padding-bottom: 10px;
+        @media @tablet {
+            .custom-flex(center, center, column);
+        }
+
+        
+        h1 {
+            text-align: center;
+            padding-bottom: 100px;
+        }
+        nav {
+            .custom-flex(space-around, center, column);
+            width: 100%;
+            
+            @media @tablet {
+                .custom-flex(space-around, center, row);
+                width: 80%;
+            }
+        }
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            font-family: 'Work Sans', sans-serif;
+            text-align: center;
+            color: white;
+            width: 97%;
+            height: 40px;
+            background-color: #eee;
+            border-radius: 20px;
+            border: 1px solid @secondary;
+            margin: 2px;
+            font-size: 3em;
+            color: @secondary;
+            padding: 10px;
+            &:hover {
+                background-color: rgb(48, 62, 248);
+                border: 1px solid white;
+                color: white;
+            }
+            
+            @media @tablet {
+                padding: 5px;
+                margin: 5px;
+            }
+            @media @desktop {
+                padding: 5px;
+                margin: 5px;
+            }
+            
+        }
+    }
+    section {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    @media @tablet {
+        border: 1px solid red;
+        margin: 0 auto;
+    }
+
+    @media @desktop {
+        border: 1px solid blue;
+        margin: 0 auto;
+    }
+    
+    .mission {
+        text-align: center;
+        padding: 40px;
+       
+    }
+
+    .donate {
+        text-align: center;
+        padding: 20px;
+        height: 300px;
+        background-image: url("https://lh3.googleusercontent.com/wyz4wenqdx_OYDjlgGNJfrmHPLfaRWaREZ1KvsHjNCip3b1WT4AXVAGkD0PC4VoZiYWCpXzKuPqG8vXwDoDcDngM5_VrhTbYarcFbaiiWUT0ToGiCMKYJsLF2657nCWExVwkauCTJA=w2400");
+        background-size: 1600px;
+        background-repeat: no-repeat;
+        background-color: @main;
+        background-position-y: -350px; 
+        background-position-x: center;
+        //border: 10px solid black;
+        
+        
+        button {
+            width: 200px;
+            height: 40px;
+            border-radius: 30px;
+            margin-top: 120px;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 3em;
+            cursor: pointer;
+           
+            border: 2px solid @main;
+            &:hover {
+                background-color: rgb(48, 62, 248);
+                border: 3px solid white;
+                color: white;
+            }
+        }
+    }
+    .extra {
+        background-color: @main;
+        height: 60px;
+    }
+    .extra2 {
+        background-color: @secondary;
+        height: 10px;
+    }
+
+    .share {
+        text-align: center;
+        padding: 20px;
+        background-image: url("https://lh3.googleusercontent.com/vW3EPZKB80W0dToGp-V7C3OhL5Nf3fR6Vx0WHL8hOJLTJsB7wbk8sdA4Y19tGQKfd3TRFgXB7Mvxl1x8VeoeH32jR8_-8y9P-liO0MEGPPZwgAWAqdcgax8sLKaeMhRn54Prz1gCQw=w2400");
+        background-size: 1800px;
+        background-repeat: no-repeat;
+        background-color: white;
+        background-position: center; 
+        
+        color: white;
+        font-size: 2em;
+        
+        button {
+            cursor: pointer;
+            width: 30%;
+            height: 40px;
+            border-radius: 30px;
+            margin: 20px;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1.6em;
+            border: 2px solid @main;
+            &:hover {
+                background-color: rgb(29, 78, 62);
+                border: 3px solid white;
+                color: white;
+            }
+            @media @desktop {
+                width: 200px;
+                height: 40px;
+                border-radius: 30px;
+                margin: 60px;
+                font-family: 'Work Sans', sans-serif;
+                
+                border: 2px solid @main;
+                &:hover {
+                    background-color: darkgreen;
+                    border: 3px solid white;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .stories {
+        font-family: 'Work Sans', sans-serif;
+        h2 {
+            text-align: center;
+        }
+        .topics {
+            .custom-flex(center, center, column);
+            margin-bottom: 30px;
+            width: 100%;
+            
+            @media @tablet {
+                .custom-flex(space-around, center, row);
+                flex-wrap: wrap;
+                margin-bottom: 30px;
+            }
+            
+        
+            .tab {
+            font-family: 'Work Sans', sans-serif;
+            cursor: pointer;
+            font-size: 2em;
+            height: 40px; 
+            width: 100%;
+            text-align: center;
+            border-radius: 20px;
+            padding: 5px;
+            background-color: rgb(48, 62, 248);
+            border: 1px solid black;
+            margin: 2px;
+            font-size: 3em;
+            color: black;
+            padding: 5px;
+            &:hover {
+                background-color: @main;
+            }
+            @media @tablet {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                padding-top: 35px;
+                background-image: url("https://lh3.googleusercontent.com/_PfMHv38JSGtpanPuWy0QpF__KXhAoxSa5NcvOzIZkf896xhh9AL--qfBbbyV6dK_xTxyZ6LehHcugBtr1Z0epBlf1PLEaMJwZYWyfB2WpH4Jx67UD5sQJFMnCVpUgCYvV6otgh1Bg=w2400");
+                background-size: 150px;
+                background-position: center;
+                background-repeat: no-repeat;
+                color: @main;
+                transition: 1s;
+                -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+                -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+                box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+}
+
+                &:hover {
+                    @media @tablet {
+                    padding-top: 20px;
+                    color: white;
+                    }
+                }
+                
+            }
+            .active-tab {
+                background-color: @secondary;
+            }
+
+        }
+        
+    }
+
+    .card-contain {
+        .custom-flex(space-around, center, column);
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: #eee;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 3em;
+        text-align: center;
+        @media @tablet {
+            .custom-flex(space-evenly, center, row);
+            width: 100%;
+        }
+        @media @desktop {
+            .custom-flex(space-evenly, center, row);
+            width: 100%;
+        }
+        .card {
+            border: 2px solid @main;
+            width: 100%;
+            margin: 10px 0;
+            border-radius: 15px;
+            background-color: white;
+            cursor: pointer;
+            
+            .custom-flex(center, space-evenly, column); 
+
+            @media @tablet {
+                width: 35%;
+                margin: 15px;
+ 
+            }
+            @media @desktop {
+                width: 25%;
+                margin: 15px;
+                
+            }
+
+            .headline {
+                text-align: center;
+                margin-bottom: 15px;
+                margin-top: 20px;
+                
+            }
+            .other-card-content {
+                .custom-flex(space-around, center, column);
+                
+                p {
+                    margin: 0 10px;
+                }
+
+                .img-container {
+                    text-align: center;
+                    width: 100%;
+                    margin-top: 10px;
+                    
+                    img {
+                        
+                        object-fit: cover;
+                        width: 100%;
+                        margin-bottom: 10px;
+                       
+                    }
+                    
+                }
+            }
+           
+        }
+       
+    }
+}
+    
