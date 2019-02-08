@@ -30,6 +30,21 @@
   padding-bottom: 100px;
   padding-top: 100px;
 }
+.logo {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  .logo {
+    text-align: left;
+    margin: 15px 44px;
+  }
+}
+.logo img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 .accordion {
   display: inline-block;
   background-color: #eee;
@@ -146,6 +161,10 @@
     border: 3px solid white;
     color: white;
   }
+}
+.panel .share button a {
+  text-decoration: none;
+  color: black;
 }
 .panel .map {
   height: 400px;

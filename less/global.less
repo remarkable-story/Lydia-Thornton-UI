@@ -32,7 +32,21 @@
         }
     }
     
-    
+    .logo {
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        @media @tablet {
+            text-align: left;
+            margin: 15px 44px;
+        }
+        img {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            
+        }
+    }
+
   
     .accordion {
         display: inline-block;
@@ -64,12 +78,10 @@
         width: 100%;
         margin: 0 auto;
     }
-
     @media @tablet {
         
         margin: 0 auto;
     }
-
     @media @desktop {
         
         margin: 0 auto;
@@ -78,7 +90,6 @@
         text-align: center;
         padding: 40px;
         display: block;
-    
     }
 
     .donate {
@@ -129,6 +140,7 @@
         background-color: white;
         background-position: center; 
         
+        
         color: white;
         font-size: 2em;
         
@@ -159,6 +171,10 @@
                     border: 3px solid white;
                     color: white;
                 }
+            }
+            a {
+                text-decoration: none;
+                color: black;
             }
         }
     }
