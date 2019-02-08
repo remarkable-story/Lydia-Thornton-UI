@@ -14,4 +14,4 @@ This marketing/sign up page was created as a frontend to a React app. It is comp
 ![alt text](https://lh3.googleusercontent.com/JtFJr_yGvprLooiu8VtIPSCslomHKEmO34hMsj_G2AsobxB-bvgLJEuqPZq5wZOsLfFgx4HGBFLwQCFboH_gYQOMcXT-KxBXJcMYm-fQr7JCJ2fpC7eqvmnltd7EfbV6Zytu0QFy6g=w2400 "image of project")
 
 
-Each gray bar unfolds to reveal a different section and an interactive tableau map in included too.
+Each gray bar unfolds to reveal a different section and an interactive tableau map is included too.
