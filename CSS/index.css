@@ -33,9 +33,17 @@
 .logo {
   width: 100%;
   background-color: white;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  .logo {
+    text-align: left;
+    margin: 15px 44px;
+  }
 }
 .logo img {
-  margin: 15px 44px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .accordion {
   display: inline-block;
